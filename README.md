@@ -21,6 +21,7 @@ TODO write some sample usages
 ## Credits
 
 * [Jason McCallister](https://github.com/themccallister)
+* [Chris Hemmings](https://github.com/chrishemmings) for [chrishemmings/oauth2-digitalocean](https://github.com/chrishemmings/oauth2-digitalocean)
 
 ## About Venveo
 
