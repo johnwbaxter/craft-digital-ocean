@@ -6,7 +6,7 @@ This is a Digital Ocean OAuth Provider that allows you to build plugins that int
 
 - [Digital Ocean Account](https://m.do.co/c/2c36fe8acb73)
 - [Craft 2.5+](https://craftcms.com/)
-- [Craft OAuth 1.0+](https://dukt.net/craft/oauth)
+- [Craft OAuth 2.0+](https://dukt.net/craft/oauth)
 
 ## Installation and Setup
 
