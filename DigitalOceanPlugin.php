@@ -2,26 +2,34 @@
 
 namespace Craft;
 
-require_once(CRAFT_PLUGINS_PATH . 'digitalocean/vendor/autoload.php');
-
 class DigitalOceanPlugin extends BasePlugin
 {
+    /**
+     * Require the vendor autoload
+     */
+    public function init()
+    {
+        require_once(CRAFT_PLUGINS_PATH . 'digitalocean/vendor/autoload.php');
+
+        parent::init();
+    }
+
     /**
      * Get Name
      */
     public function getName()
     {
-        return Craft::t('Digital Ocean');
+        return 'Digital Ocean';
     }
 
     /**
-     * Plugins description.
+     * Plugins description
      *
      * @return mixed
      */
     public function getDescription()
     {
-        return Craft::t('Digital Ocean Provider for OAuth');
+        return 'Digital Ocean Provider for OAuth';
     }
 
     /**
@@ -29,7 +37,7 @@ class DigitalOceanPlugin extends BasePlugin
      */
     public function getVersion()
     {
-        return '2.0.0';
+        return '1.0.0';
     }
 
     /**
@@ -46,6 +54,26 @@ class DigitalOceanPlugin extends BasePlugin
     public function getDeveloperUrl()
     {
         return 'https://www.venveo.com';
+    }
+
+    /**
+     * Documentation URL
+     *
+     * @return string
+     */
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/venveo/craft-digital-ocean';
+    }
+
+    /**
+     * URL to releases.json
+     *
+     * @return string
+     */
+    public function getReleaseFeedUrl()
+    {
+        return 'https://raw.githubusercontent.com/venveo/craft-digital-ocean/master/releases.json';
     }
 
     /**
@@ -66,7 +94,9 @@ class DigitalOceanPlugin extends BasePlugin
     }
 
     /**
-     * Get OAuth Providers
+     * Get OAuth providers
+     *
+     * @return array
      */
     public function getOauthProviders()
     {
@@ -75,7 +105,6 @@ class DigitalOceanPlugin extends BasePlugin
         return [
             'Dukt\OAuth\Providers\DigitalOcean',
         ];
-
     }
 
     /**
