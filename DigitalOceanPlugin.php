@@ -73,7 +73,7 @@ class DigitalOceanPlugin extends BasePlugin
         require_once(CRAFT_PLUGINS_PATH . 'digitalocean/providers/DigitalOcean.php');
 
         return [
-            'Dukt\OAuth\Providers\Azure',
+            'Dukt\OAuth\Providers\DigitalOcean',
         ];
 
     }
